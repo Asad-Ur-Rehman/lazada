@@ -1,0 +1,8 @@
+.bg-dark {
+    background-color: #222!important;
+    border-color : #080808!important;
+    border-radius: 0.3rem;
+}
+.navbar-brand {
+    color : #9d9d9d;
+}

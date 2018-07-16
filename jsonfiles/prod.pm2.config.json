@@ -1,0 +1,9 @@
+{
+  "apps": [{
+    "name"        : "json-server-prod",
+    "script"      : "json-server products-prod.json  --port 3100 --host 0.0.0.0",
+    "env_production" : {
+       "NODE_ENV": "production"
+    }
+  }]
+}

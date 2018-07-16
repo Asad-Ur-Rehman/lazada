@@ -1,0 +1,60 @@
+<div *ngIf="product" class="container mt-5 pt-3">
+  <div class="card">
+    <div class="card-header">
+      <h3>Product Details</h3>
+    </div>
+    <div class="card-body">
+      <label class="detailsLabel">
+        <strong>ID:</strong>
+      </label>{{product.id}}
+      <hr>
+      <label class="detailsLabel">
+        <strong>Name:</strong>
+      </label>{{product.name}}
+      <hr>
+      <label class="detailsLabel">
+        <strong>SKU:</strong>
+      </label>#24M39C
+      <hr>
+      <label class="detailsLabel">
+        <strong>Created:</strong>
+      </label>24-10-2014
+      <hr>
+      <label class="detailsLabel">
+        <strong>Price:</strong>
+      </label>{{product.price | currency}}
+      <hr>
+
+      <label class="detailsLabel">
+        <strong>Sale Price:</strong>
+      </label>{{(product.price + 10) | currency}}
+      <hr>
+      <label class="detailsLabel">
+        <strong>Recommended Price:</strong>
+      </label>{{product.price| currency}}
+      <hr>
+      <label class="detailsLabel">
+        <strong>Active</strong>
+      </label>Yes
+      <hr>
+
+      <label class="detailsLabel">
+        <strong>Stock:</strong>
+      </label>{{product.stock}}
+      <hr>
+      <label class="detailsLabel">
+        <strong>Description:</strong>
+      </label>This is a description, no no it is really a description, lorem ipsum gypsum plaster of paris
+      <hr>
+
+    </div>
+
+
+    <div class="card-footer">
+      <button class="btn btn-outline-dark" (click)="goBack()">Back</button>
+      &nbsp;
+      <button class="btn btn-outline-dark" (click)="addStock(product)">Add Stock</button>
+
+    </div>
+  </div>
+</div>

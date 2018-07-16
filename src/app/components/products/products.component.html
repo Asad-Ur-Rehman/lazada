@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="mt-4 mb-2 border-bottom">
+    <h2>Products</h2>
+  </div>
+  <div class="mt-4">
+    <p>There are
+      <strong>{{products.length}}</strong> products listed.</p>
+  </div>
+  <div>
+    <label>Showing
+      <mat-form-field class="entrySize">
+        <mat-select [(value)]="selected" (selectionChange)="numberOfEntriesChange()">
+          <mat-option value="5">5</mat-option>
+          <mat-option value="10">10</mat-option>
+          <mat-option value="25">25</mat-option>
+          <mat-option value="50">50</mat-option>
+        </mat-select>
+      </mat-form-field>
+      entries
+    </label>
+
+    <table class="table table-bordered">
+      <thead>
+        <tr border>
+          <th>Name</th>
+          <th>Stock</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of products | slice:start:end">
+          <td class="rowHeight">
+            <a routerLink='/products/{{row.id}}'>{{row.name}}</a>
+          </td>
+          <td class="rowHeight"> {{row.stock}}</td>
+          <td class="rowHeight">{{row.price |currency}}</td>
+          <td class="rowHeight" style="text-align: center">
+            <button class="btn btn-outline-dark" (click)="openModal(row)">Add Stock</button>
+            <!-- btn btn-primary -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>Showing {{start+1}} to {{end > products.length ? products.length :end}} of
+      <strong>{{products.length}}</strong> entries</p>
+    <ngb-pagination [collectionSize]=products.length [(page)]="page" [maxSize]="100" [pageSize]="pageSize" [rotate]="true" [ellipses]="false"
+      [boundaryLinks]="true" (pageChange)="loadTablePage()"></ngb-pagination>
+    <hr>
+
+    <p>Current page: {{page}}</p>
+
+  </div>

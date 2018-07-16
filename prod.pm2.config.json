@@ -1,0 +1,9 @@
+{
+  "apps": [{
+    "name"        : "lazada-prod",
+    "script"      : "ng serve --host 0.0.0.0 --port 4100 --prod",
+    "env_production" : {
+       "NODE_ENV": "production"
+    }
+  }]
+}

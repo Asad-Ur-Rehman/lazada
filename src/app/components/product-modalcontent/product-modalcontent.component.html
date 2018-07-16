@@ -1,0 +1,36 @@
+<div class="modal-header">
+  <h4 class="modal-title">Add Stock</h4>
+  <button type="button" class="close" aria-label="Close" (click)="crossModal()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<form [formGroup]="stockForm" (ngSubmit)="onSubmit()">
+  <div class="modal-body">
+    <div class="form-group">
+      <label> Product Name: </label>
+      <input type="text" formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }"
+        value= {{product.name}} />
+      <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+        <div *ngIf="f.firstName.errors.required">First Name is required</div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label> Add Stock: </label>
+      <input class="form-control" formControlName="addStock" type="number" placeholder="" name="dp"  [ngClass]="{ 'is-invalid': submitted && f.addStock.errors }">
+      <div *ngIf="submitted && f.addStock.errors" class="invalid-feedback">
+          <div *ngIf="f.addStock.errors.required">Add Stock field is required</div>
+        </div>
+    </div>
+
+  </div>
+
+
+  <div class="modal-footer">
+
+    <div class="form-group">
+    </div>
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+    <button  class="btn btn-outline-dark">Save</button>
+  </div>
+</form>

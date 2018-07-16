@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FormControl, FormGroup } from '@angular/forms';
+import { Title }     from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  public constructor (private titleService: Title ){}
+  title = 'LAZADA';
+  userName= 'Asad Rehman'
+  public setTitle( newTitle: string) {
+    this.titleService.setTitle( newTitle );
+  }
+
 }

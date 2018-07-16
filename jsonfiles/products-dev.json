@@ -1,0 +1,145 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Windows xp",
+      "price": "300",
+      "stock": 129
+    },
+    {
+      "id": 2,
+      "name": "Windows 8.1",
+      "stock": 13,
+      "price": "200"
+    },
+    {
+      "id": 3,
+      "name": "Windows 7",
+      "stock": 17,
+      "price": "150"
+    },
+    {
+      "id": 4,
+      "name": "Windows 95",
+      "stock": 26,
+      "price": "150"
+    },
+    {
+      "id": 5,
+      "name": "Windows 10",
+      "stock": 17,
+      "price": "150"
+    },
+    {
+      "id": 6,
+      "name": "Windows 8.1",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "id": 7,
+      "name": "Windows 98 ",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "id": 8,
+      "name": "Windows 7",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "id": 9,
+      "name": "Windows 91",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "id": 10,
+      "name": "Windows 93",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "id": 11,
+      "name": "Windows 7",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "id": 12,
+      "name": "Windows 11",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "id": 13,
+      "name": "Windows X",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "id": 14,
+      "name": "Windows Y",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "id": 15,
+      "name": "Windows Z",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "id": 16,
+      "name": "Fedora",
+      "stock": 2,
+      "price": "150"
+    },
+    {
+      "id": 17,
+      "name": "Ubuntu",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "id": 18,
+      "name": "Linux mint",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "id": 19,
+      "name": "Kaali linux",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "id": 20,
+      "name": "Kubuntu",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "id": 21,
+      "name": "Lubuntu",
+      "stock": 22,
+      "price": "150"
+    },
+    {
+      "name": "Windows 10",
+      "stock": 4,
+      "price": "300",
+      "id": 22
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customerName": "Bhatti fahad Ali",
+      "orderNumber": "#223",
+      "total": "300",
+      "orderStatus": false
+    }
+  ]
+}
